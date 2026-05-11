@@ -5,3 +5,6 @@ dist/
 logs/*.json
 logs/*.log
 !logs/.gitkeep
+mints/*.json
+logs/*
+.env
