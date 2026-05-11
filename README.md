@@ -49,6 +49,45 @@ WALLETS=wallet1:0xYOUR_PRIVATE_KEY,wallet2:0xANOTHER_PRIVATE_KEY
 
 Use only wallets you own and control. Prefer dedicated mint wallets with limited funds. Do not commit `.env`.
 
+## Telegram Bot
+
+Create a bot with Telegram's BotFather:
+
+1. Open Telegram and message `@BotFather`.
+2. Send `/newbot`.
+3. Follow the prompts for bot name and username.
+4. Copy the bot token into `.env` as `TELEGRAM_BOT_TOKEN`.
+5. Find your numeric Telegram user ID, for example by messaging `@userinfobot`.
+6. Add allowed IDs to `.env`:
+
+```bash
+TELEGRAM_BOT_TOKEN=123456:YOUR_BOT_TOKEN
+TELEGRAM_ALLOWED_USER_IDS=123456789
+```
+
+Run the bot:
+
+```bash
+npm run telegram
+```
+
+Telegram commands:
+
+```text
+/start
+/help
+/analyze <url>
+/dryrun <configName>
+/approve <configName>
+/mint <configName>
+/status
+/limits
+```
+
+The bot only responds to `TELEGRAM_ALLOWED_USER_IDS`. It refuses private-key-like input and never needs private keys in Telegram. Keep wallet keys local in `.env`.
+
+Config names map to files in `./mints`, so `/dryrun example.base` loads `./mints/example.base.json`. `/approve` runs a dry run first and only writes `approved: true` if the dry run passes cleanly. `/mint` refuses unless the config is already approved.
+
 ## Analyze Flow
 
 ```bash

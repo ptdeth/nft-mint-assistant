@@ -11,13 +11,15 @@
     "start": "node dist/index.js",
     "analyze": "tsx src/index.ts analyze",
     "dryrun": "tsx src/index.ts dryrun",
-    "mint": "tsx src/index.ts mint"
+    "mint": "tsx src/index.ts mint",
+    "telegram": "tsx src/telegram/bot.ts"
   },
   "dependencies": {
     "commander": "^12.1.0",
     "dotenv": "^16.4.5",
     "ethers": "^6.13.4",
     "pino": "^9.5.0",
+    "telegraf": "^4.16.3",
     "zod": "^3.23.8"
   },
   "devDependencies": {
