@@ -1,0 +1,56 @@
+{
+  "projectName": "example-com",
+  "sourceUrl": "https://example.com",
+  "detection": {
+    "kind": "directMintPage",
+    "confidence": "low",
+    "detectedAt": "2026-05-11T12:35:04.183Z",
+    "notes": [
+      "Scanned public page HTML and same-origin script assets for static mint hints.",
+      "Detected 0 contract address candidate(s).",
+      "Detected 0 chain ID candidate(s).",
+      "Selected chainId 8453.",
+      "Selected contract 0x0000000000000000000000000000000000000000.",
+      "Selected mint function mint.",
+      "Detected 0 ETH price candidate(s).",
+      "Detected library hints: none.",
+      "Scanned sources: https://example.com.",
+      "Confidence is low. This config is saved for review only and cannot be approved for execution."
+    ],
+    "candidates": {
+      "chainIds": [],
+      "contractAddresses": [],
+      "abiFragments": [],
+      "mintFunctionNames": [],
+      "priceCandidatesEth": [],
+      "startTimeCandidates": [],
+      "libraryHints": [],
+      "sourceUrls": [
+        "https://example.com"
+      ]
+    }
+  },
+  "chainId": 8453,
+  "contractAddress": "0x0000000000000000000000000000000000000000",
+  "mintFunction": {
+    "name": "mint",
+    "args": [],
+    "quantityArgIndex": 0,
+    "payable": true
+  },
+  "quantity": 1,
+  "priceEth": "0",
+  "approved": false,
+  "wallets": {
+    "maxWallets": 1,
+    "labels": []
+  },
+  "limits": {
+    "maxMintPriceEth": "0",
+    "maxGasGwei": "2",
+    "maxTotalSpendEth": "0.001",
+    "maxAttemptsPerWallet": 1,
+    "stopAfterSuccess": true,
+    "perWalletMintLimit": 1
+  }
+}

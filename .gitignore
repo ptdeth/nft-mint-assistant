@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.npm-cache/
+.env
+logs/*.json
+logs/*.log
+!logs/.gitkeep

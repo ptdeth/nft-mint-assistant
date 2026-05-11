@@ -1,0 +1,37 @@
+{
+  "projectName": "example-base-mint",
+  "sourceUrl": "https://example.com/mint",
+  "detection": {
+    "kind": "directMintPage",
+    "confidence": "medium",
+    "detectedAt": "2026-05-11T00:00:00.000Z",
+    "notes": [
+      "Example only. Replace all contract, function, price, and safety values after review."
+    ]
+  },
+  "chainId": 8453,
+  "contractAddress": "0x0000000000000000000000000000000000000000",
+  "mintFunction": {
+    "name": "mint",
+    "args": [],
+    "quantityArgIndex": 0,
+    "payable": true
+  },
+  "quantity": 1,
+  "priceEth": "0.01",
+  "approved": false,
+  "wallets": {
+    "maxWallets": 1,
+    "labels": [
+      "wallet1"
+    ]
+  },
+  "limits": {
+    "maxMintPriceEth": "0.02",
+    "maxGasGwei": "2",
+    "maxTotalSpendEth": "0.03",
+    "maxAttemptsPerWallet": 1,
+    "stopAfterSuccess": true,
+    "perWalletMintLimit": 1
+  }
+}

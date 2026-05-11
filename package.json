@@ -1,0 +1,31 @@
+{
+  "name": "nft-mint-assistant",
+  "version": "0.1.0",
+  "description": "Safety-first TypeScript CLI assistant for analyzing NFT mint pages and preparing validated EVM mint configs.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --import tsx --test tests/**/*.test.ts",
+    "start": "node dist/index.js",
+    "analyze": "tsx src/index.ts analyze",
+    "dryrun": "tsx src/index.ts dryrun",
+    "mint": "tsx src/index.ts mint"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "pino": "^9.5.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

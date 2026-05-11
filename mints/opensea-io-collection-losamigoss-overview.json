@@ -1,0 +1,45 @@
+{
+  "projectName": "losamigoss",
+  "sourceUrl": "https://opensea.io/collection/losamigoss/overview",
+  "detection": {
+    "kind": "opensea",
+    "confidence": "low",
+    "detectedAt": "2026-05-11T12:02:53.138Z",
+    "notes": [
+      "OpenSea collection slug detected: losamigoss.",
+      "Could not fetch OpenSea page: This operation was aborted.",
+      "OpenSea pages often do not expose primary-sale mint functions. Review all detected fields before approval.",
+      "Detected 0 contract address candidate(s).",
+      "Detected 0 chain ID candidate(s).",
+      "Selected chainId 8453.",
+      "Selected contract 0x0000000000000000000000000000000000000000.",
+      "Selected mint function mint.",
+      "Detected 0 ETH price candidate(s).",
+      "Scanned sources: https://opensea.io/collection/losamigoss.",
+      "Confidence is low. This config is saved for review only and cannot be approved for execution."
+    ]
+  },
+  "chainId": 8453,
+  "contractAddress": "0x0000000000000000000000000000000000000000",
+  "mintFunction": {
+    "name": "mint",
+    "args": [],
+    "quantityArgIndex": 0,
+    "payable": true
+  },
+  "quantity": 1,
+  "priceEth": "0",
+  "approved": false,
+  "wallets": {
+    "maxWallets": 1,
+    "labels": []
+  },
+  "limits": {
+    "maxMintPriceEth": "0",
+    "maxGasGwei": "2",
+    "maxTotalSpendEth": "0.001",
+    "maxAttemptsPerWallet": 1,
+    "stopAfterSuccess": true,
+    "perWalletMintLimit": 1
+  }
+}
